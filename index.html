@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <!-- <link rel="icon" type="png" href="./assets/Pic-icon.png"> -->
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="mediaqueries.css">
+</head>
+
+<body>
+
+    <!--Nav Section-->
+
+    <!--inside a body element we create nav element--->
+    <nav id="desktop-nav">
+        <!--It going to be id desktop nav we going to be use this id to target with our style sheets--->
+        <div class="logo">Sandeep Yadav</div>
+        
+        <div>
+            <ul class="nav-link">
+                <li><a href="#about">About</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+
+            </ul>
+        </div>
+    </nav>
+
+
+    <!-- Add a hamburger menu that will be visible on smaller screens and hide the desktop menu when the screen size changes. -->
+     <nav id="hamburger-nav">
+        <div class="logo">Sandeep Yadav</div>
+        <!-- Hamburger Icon that triggers the mobile menu -->
+         <div class="hamburger-menu">
+            <div class="hamburger-icon" onclick="toggleMenu()">
+                <span></span> <!--There were is line for humburger menu-->
+                <span></span>
+                <span></span>
+            </div>
+
+             <!-- Mobile Menu that appears when the hamburger icon is clicked -->
+          <div class="mobile-menu">
+                <li><a href="about" onclick="toggleMenu()">About</a></li>
+                <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+                <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+                <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+          </div>
+         </div>
+     </nav>
+
+    <!--now we create a section -->
+
+    <!--Profile Section-->
+
+    <section id="profile">
+        <div class="section__pic-container">
+            <img src="./assets/Photo1.jpg" alt="sandeep yadav profile pic" />
+        </div>
+
+        <!--Profile Text-->
+
+        <div class="section__text">
+            <p class="section__text__p1">Hello, I'm</p> <!-- Reuse the code From Profile section-->
+            <h1 class="title">Sandeep Yadav</h1> <!-- Reuse the code From Profile section-->
+            <!-- <p class="section__text__p2">Full Stack Developer</p>Reuse the code profile section -->
+
+             <!-- Element to contain animated typing -->
+            <span id="element">Frontend Developer</span>
+
+            <!--Button Section-->
+
+            <div class="btn-container">
+                <button class="btn btn-color-1" onclick="window.open('./assets/Sandeep_Yadav_Resume.pdf')">Download
+                    Resume</button>
+                <button class="btn btn-color-2" onclick="location.href='./#contact'">Contact Info</button>
+            </div>
+
+            <!--Social Icon-->
+
+            <div id="socials-container">
+                <img src="./assets/linkedin.png" alt="My linkedin Profile" class="icon"
+                    onclick="location.href='https://www.linkedin.com/in/sandeep-yadav-096015249/'">
+                <img src="./assets/github.png" alt="My github Profile" class="icon"
+                    onclick="location.href='https://github.com/Sandeep-Yadav-15'">
+            </div>
+        </div>
+    </section>
+
+
+    <!--Next Section Will Be A About-->
+    <section id="about">
+        <p class="section__text__p1">Get To Know More</p>
+        <h1 class="title">About Me</h1>
+        <div class="section-container">
+            <div class="section_pic-container">
+                <img src="./assets/about-pic.jpg" alt="profile picture" class="about-pic"/>
+            </div>
+           
+            <!--Container Box_1-->
+
+            <div class="about-details-container">
+                    <div class="about-containers">
+                        <div class="details-container">
+                            <img src="./assets/experience.png" alt="experience icon" class="icon"/>
+                            <h3>Experience</h3>
+                            <p>6 Month Full Stack Development</p>
+                        </div>
+
+                        <!--Container Box_2-->
+    
+                        <div class="details-container">
+                            <img src="./assets/education.png" alt="education icon" class="icon"/>
+                            <h3>Education</h3>
+                            <p>B.E Computer Engineering </p>
+                        </div>
+    
+                    </div>
+    
+                    <!--Paragraph Container-->
+
+                    <div class="text-container">
+                        <p>My name is Sandeep and I am from Pune. If I talk about my education, I have completed a Bachelors
+                            degree in Computer science from Pune university of my city. Taking about my strengths,I am
+                            self-motivated, I can adjust myself to any environment, I don't wait for the deadline, I finish
+                            my work before the deadline.
+    
+                            My weakness is I just can't keep any work pending. I wanted to complete my work on time,
+                            otherwisw it Disturbs my routine also.
+                            If I talk about my short term goal, I want to start my career as a Python and
+                            my long term goal is to be an industry expert.</p>
+                    </div>
+    
+                </div>
+
+        </div>
+
+            <!--Arrow-->
+        <img src="./assets/arrow.png" alt="arrow icon" class="icon arrow" onclick="location.href='./#experience'"/>
+
+    </section>
+
+    <!--Next will target Experience section-->
+    <section id="experience">
+        <p class="section__text__p1">Explore My</p> <!-- Reuse the code from about section-->
+        <h1 class="title">Experience</h1> <!--Reuse the code from about section-->
+        <div class="experience-details-container">
+
+            <div class="about-containers">
+
+                <div class="details-container">
+                    <h2 class="experience-sub-title">Fronted Development</h2><!--Reuse the code from about section-->
+
+                    <div class="article-container">
+                        <!--now we use article tag means article tag specifies independent self-content content-->
+                        <article><!--Every article is goin to be bascially skillws that be have-->
+                            <img src="./assets/checkmark.png" alt="checkmark-icon" class="icon"/>
+
+                            <div>
+                                <h3>HTML</h3>
+                                <P>Experienced</P>
+                            </div>
+
+                        </article>
+
+                        <article>
+                            <img src="./assets/checkmark.png" alt="checkmark-icon" class="icon"/>
+
+                            <div>
+                                <h3>CSS</h3>
+                                <P>Experienced</P>
+                            </div>
+                            
+                        </article>
+
+                        <article>
+                            <img src="./assets/checkmark.png" alt="checkmark-icon" class="icon"/>
+
+                            <div>
+                                <h3>JavaScript</h3>
+                                <p>Intermediate</p>
+                            </div>
+                            
+                        </article>
+
+                        <article>
+                            <img src="./assets/checkmark.png" alt="checkmark-icon" class="icon"/>
+
+                            <div>
+                                <h3>ReactJs</h3>
+                                <p>Intermediate</p>
+                            </div>
+                            
+                        </article>
+
+                    </div>
+
+                </div>
+
+                <!--2nd Details container means 2nd box-->
+            <div class="details-container">
+                <h2 class="experience-sub-title">Backend Development</h2><!--Reuse the code from about section-->
+
+                <div class="article-container">
+                    <!--now we use article tag means article tag specifies independent self-content content-->
+                    <article><!--Every article is goin to be bascially skills that be have-->
+                        <img src="./assets/checkmark.png" alt="checkmark-icon" class="icon"/>
+
+                        <div>
+                            <h3>Node JS</h3>
+                            <P>Intermediate</P>
+                        </div>
+
+                    </article>
+
+                    
+                </div>
+
+            </div>
+
+            </div>
+
+        </div>
+
+         <!--Arrow-->
+         <img src="./assets/arrow.png" alt="arrow icon" class="icon arrow" onclick="location.href='./#projects'"/>
+
+    </section>
+
+    <!--Next Section will be a Project-->
+    <section id="projects">
+        <p class="section__text__p1">Browse My Recent</p>
+        <h1 class="title">Projects</h1>
+
+        <div class="experience-details-container">
+
+            <div class="about-containers">
+
+                <div class="details-container color-container">
+
+                    <div class="article-container">
+                        <img src="./assets/project-1.png" alt="Project-1" class="project-img"/>
+                    </div>
+    
+                    <h2 class="experience-sub-title project-title">FitZone Fitnees Website</h2>
+    
+                    <div class="btn-container">
+
+                        <button class="btn btn-color-1 project-btn" onclick="location.href='https://github.com/Sandeep-Yadav-15'">
+                            Github
+                        </button>
+        
+                        <button class="btn btn-color-1 project-btn" onclick="location.href='https://sandeep-yadav-15.github.io/GYM-Website/'">
+                            Live Demo
+                        </button>
+
+                    </div>
+                    
+    
+                </div>
+    
+                <div class="details-container color-container">
+    
+                    <div class="article-container">
+                        <img src="./assets/project-2.png" alt="Project-2" class="project-img"/>
+                    </div>
+    
+                    <h2 class="experience-sub-title project-title">QR Code Generator</h2>
+    
+                    <div class="btn-container">
+
+                        <button class="btn btn-color-1 project-btn" onclick="location.href='https://github.com/Sandeep-Yadav-15'">
+                            Github
+                        </button>
+        
+                        <button class="btn btn-color-1 project-btn" onclick="location.href='https://sandeep-yadav-15.github.io/QR-Code-Generator/'">
+                            Live Demo
+                        </button>
+
+                    </div>
+                   
+    
+                </div>
+    
+                <div class="details-container color-container">
+    
+                    <div class="article-container">
+                        <img src="./assets/project-3.png" alt="Project-3" class="project-img"/>
+                    </div>
+    
+                    <h2 class="experience-sub-title project-title">Calculator</h2>
+    
+                    <div class="btn-container">
+                        <button class="btn btn-color-1 project-btn" onclick="location.href='https://github.com/Sandeep-Yadav-15'">
+                            Github
+                        </button>
+        
+                        <button class="btn btn-color-1 project-btn" onclick="location.href='https://sandeep-yadav-15.github.io/Calculator/'">
+                            Live Demo
+                        </button>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <!--Arrow-->
+        <img src="./assets/arrow.png" alt="arrow icon" class="icon arrow" onclick="location.href='./#contact'"/>
+
+    </section>
+
+    <!-- Next Section Will Be A Contact Section -->
+    <section id="contact">
+        <p class="section__text__p1">Get In Touch</p>
+        <h1 class="title">Contact Me</h1>
+
+        <div class="contact-info-upper-container">
+
+            <div class="contact-info-container">
+                <img src="./assets/email.png" alt="Email Icon" class="icon contact-icon email-icon"/>
+                <!-- To create a link that opens in the user's email program -->
+                <p><a href="mailto:someone@example.com">sandeepyadav.15719@gmail.com</a></p>
+                <!-- so we people click on this on a phone for eg any device that support it its goona open their local email app -->
+            </div>
+
+            <div class="contact-info-container">
+                <img src="./assets/linkedin.png" alt="linkedin icon" class="icon contact-icon"/>
+               <p>
+                <a href="https://in.linkedin.com/">Linkedin</a>
+               </p>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- Now We Use Footer Section -->
+    <footer>
+
+        <nav>
+
+            <div class="nav-link-container">
+
+                <ul class="nav-link">
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#experience">Experience</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+    
+                </ul>
+
+            </div>
+
+        </nav>
+
+        <p> Copyright &#169; <span id = 'year'></span> Sandeep Yadav.All Rights Reserved.</p>
+        <!-- span will be filled with the current year. -->
+
+    </footer>
+
+     <!-- Load library from the CDN -->
+     <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+     <script src="./script.js"></script>
+
+    
+
+
+</body>
+
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
