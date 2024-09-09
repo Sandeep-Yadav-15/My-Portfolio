@@ -1,0 +1,209 @@
+@media screen and (max-width: 1400px) {
+  #profile {
+    height: 83vh;
+    margin-bottom: 6rem;
+  }
+  .about-containers {
+    flex-wrap: wrap;
+  }
+  #contact,
+  #projects {
+    height: fit-content;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  #desktop-nav{
+    display: none;
+  }
+
+  #hamburger-nav{
+    display: flex;
+  }
+
+  .about-containers{
+    margin-top: 0;
+  }
+
+  #experience,
+  .experience-details-container{
+    margin-top: 2rem;
+  }
+
+  #profile{
+    height: 110vh;
+    display: block;
+
+  }
+
+.arrow{
+  display: none;
+}
+
+   section,
+  .section-container {
+    /* display: block;
+    margin: 0 10rem; */
+    height: fit-content;
+  }
+
+  .section{
+    margin: 0 5%;
+
+  }
+
+  .section__pic-container img {
+      height: 270px;
+      width: 270px;
+      margin: 0 auto 2rem;
+  }
+  .section_pic-container{
+      height: 270px;
+      width: 270px;
+      margin: 0 auto 2rem;
+  }
+
+
+}
+
+
+/* Add this to your mediaqueries.css or style.css file */
+
+@media screen and (max-width: 600px) {
+
+  /* Adjust section padding and margins for smaller screens */
+  section {
+      padding-top: 2vh;
+      margin: 0 1rem;
+      height: auto;
+  }
+
+  /* Profile section adjustments */
+  #profile {
+      /* flex-direction: column; */
+      /* gap: 2rem; */
+      height: 83vh;
+      height: 100vh;
+      margin-bottom: 0;
+  }
+
+  #about{
+    margin-top: -10rem;
+  }
+
+
+  .section__pic-container img {
+      width: 200px;
+      height: 200px;
+  }
+
+  /* Center the text and reduce the title font size */
+  h1.title{
+      font-size: 2rem;
+      text-align: center;
+      /* margin-bottom: 0.5rem; */
+
+  }
+
+  #element {
+      font-size: 1.2rem;
+      /* padding-left: 5rem; */
+  }
+
+  /* Social icons adjustments */
+  #socials-container {
+      gap: 0.5rem;
+  }
+
+  /* About section adjustments */
+  .section-container {
+      display: block;
+      padding: 0 1rem;
+  }
+
+  .section_pic-container {
+      width: 200px;
+      height: 200px;
+      /* margin-bottom: 1rem; */
+  }
+
+  .about-details-container {
+      text-align: center;
+  }
+
+  /* .arrow {
+      right: 0;
+      bottom: 1rem;
+  } */
+
+  /* Experience section adjustments */
+  .experience-details-container {
+      padding: 0 1rem;
+  }
+
+  .experience-sub-title{
+    font-size: 1.25rem;
+  }
+  article {
+    font-size: 1rem;
+  }
+
+  /* Project section adjustments */
+  .project-img {
+      width: 100%;
+      height: auto;
+  }
+
+  .color-container {
+      margin-bottom: 1rem;
+
+  }
+  .contact-info-upper-container, 
+  .btn-container{
+    flex-wrap: wrap;
+
+  }
+
+  /* Contact section adjustments */
+
+  .contact-info-upper-container {
+    justify-content: center;
+    /* flex-direction: column; */
+
+
+  }
+
+  .contact-info-container {
+      margin:0;
+
+  }
+
+  .contact-info-container p,
+   .nav-link li a{
+    font-size: 1rem;
+   }
+
+  #contact,
+  footer{
+    height: 50vh;
+  }
+
+  /* Footer adjustments */
+  footer nav{
+    height: fit-content;
+    margin-bottom: 2rem;
+  }
+
+ 
+.nav-link {
+    justify-content: center; 
+    font-size: 0.9rem; 
+}
+
+.title{
+  font-size: 2rem;
+}
+.text-container{
+  text-align: justify;
+}
+}
