@@ -473,11 +473,6 @@ article .icon{
   gap: 20px;
 }
 
-.details-containers:nth-child(4) {
-    flex-basis: 50%; /* make the 4th project container not full width */
-    margin-top: 40px; /* add some margin top to separate from the above projects */
-  }
-
 
 
 .project-img{
