@@ -164,15 +164,19 @@
 
   }
 
-  .contact-info-container img {
-    margin-bottom: 10px;
-}
+
+
   /* Contact section adjustments */
 
   .contact-info-upper-container {
     justify-content: center;
     /* flex-direction: column; */
 
+  }
+
+  .contact-icon{
+    margin: 0 10px;
+    margin-bottom: 1rem;
 
   }
 
