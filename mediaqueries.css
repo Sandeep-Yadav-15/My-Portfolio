@@ -101,6 +101,13 @@
         text-align: center;
     }
 
+   .about-containers {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr); /* Create 2 equal columns */
+        grid-template-rows: 1fr; /* Single row */
+        gap: 1rem; /* Optional: Add space between columns */
+    }
+
 
   .section__pic-container img {
       width: 200px;
