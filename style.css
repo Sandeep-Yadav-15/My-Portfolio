@@ -357,6 +357,13 @@ section {
     position: relative;
 }
 
+#about h1{
+    margin-bottom: 15rem;
+}
+#about .section__text__p1, #about .title {
+    padding-left: 405px; 
+}
+
 /*Target the about container*/
 .about-containers {
     gap: 2rem;
