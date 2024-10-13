@@ -108,6 +108,32 @@
         gap: 1rem; /* Optional: Add space between columns */
     }
 
+  .details-container {
+        text-align: center;
+        padding: 1rem;
+        background-color: white;
+        border-radius: 1rem;
+        border: 1px solid rgb(163, 163, 163);
+    }
+
+    /* Adjusting Icons for Mobile */
+    .details-container img {
+        width: 50px;
+        height: 50px;
+        margin-bottom: 0.5rem;
+    }
+    
+    /* Adjust title for mobile */
+    .details-container h3 {
+        font-size: 1.25rem;
+        margin-bottom: 0.5rem;
+    }
+
+    /* Adjust paragraph text */
+    .details-container p {
+        font-size: 1rem;
+    }
+
 
   .section__pic-container img {
       width: 200px;
