@@ -91,6 +91,16 @@
     margin-top: -10rem;
   }
 
+  #about h1 {
+        margin-bottom: 3rem;
+    }
+    
+    #about .section__text__p1, 
+    #about .title {
+        padding-left: 0;
+        text-align: center;
+    }
+
 
   .section__pic-container img {
       width: 200px;
