@@ -489,6 +489,10 @@ section {
     /* padding-right: 1rem; */
 }
 
+strong{
+    color: var(--secondary-color);
+}
+
 /*Expeerience Section*/
 #experience{
     margin-top: 8rem;
