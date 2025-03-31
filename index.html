@@ -18,58 +18,51 @@
     <nav id="desktop-nav">
         <!--It going to be id desktop nav we going to be use this id to target with our style sheets--->
         <div class="logo">Sandeep Yadav</div>
-        
+
         <div>
             <ul class="nav-link">
                 <li><a href="#about">About</a></li>
                 <li><a href="#experience">Experience</a></li>
                 <li><a href="#projects">Projects</a></li>
                 <li><a href="#contact">Contact</a></li>
-                <li><img 
-                    id="modeToggle"
-                    class="icon color-icon"
-                    src="./assets/theme_light.png"
-                    src-light="./assets/theme_light.png"
-                    src-dark="./assets/theme_dark.png"
-                    alt="Color theme icon"></li></li>
+                <li><img id="modeToggle" class="icon color-icon" src="./assets/theme_light.png"
+                        src-light="./assets/theme_light.png" src-dark="./assets/theme_dark.png" alt="Color theme icon">
+                </li>
+                </li>
             </ul>
         </div>
     </nav>
 
 
     <!-- Add a hamburger menu that will be visible on smaller screens and hide the desktop menu when the screen size changes. -->
-     <nav id="hamburger-nav">
+    <nav id="hamburger-nav">
         <div class="logo">Sandeep Yadav</div>
         <!-- Hamburger Icon that triggers the mobile menu -->
-         <div class="hamburger-menu">
+        <div class="hamburger-menu">
             <div class="hamburger-icon" onclick="toggleMenu()">
                 <span></span> <!--There were is line for humburger menu-->
                 <span></span>
                 <span></span>
             </div>
 
-             <!-- Mobile Menu that appears when the hamburger icon is clicked -->
-          <div class="mobile-menu">
+            <!-- Mobile Menu that appears when the hamburger icon is clicked -->
+            <div class="mobile-menu">
                 <li><a href="#about" onclick="toggleMenu()">About</a></li>
                 <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
                 <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
                 <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
-                <li> <img
-                    id="modeToggle2"
-                    class="icon color-icon"
-                    src="./assets/theme_light.png"
-                    src-light="./assets/theme_light.png"
-                    src-dark="./assets/theme_dark.png"
-                    alt="Color theme icon"></li>
-          </div>
-         </div>
-     </nav>
+                <li> <img id="modeToggle2" class="icon color-icon" src="./assets/theme_light.png"
+                        src-light="./assets/theme_light.png" src-dark="./assets/theme_dark.png" alt="Color theme icon">
+                </li>
+            </div>
+        </div>
+    </nav>
 
     <!--now we create a section -->
 
     <!--Profile Section-->
 
-    <section id="profile">
+    <section id="profile" class="fade-in">
         <div class="section__pic-container">
             <img src="./assets/Photo1.jpg" alt="sandeep yadav profile pic" />
         </div>
@@ -81,13 +74,13 @@
             <h1 class="title">Sandeep Yadav</h1> <!-- Reuse the code From Profile section-->
             <!-- <p class="section__text__p2">Full Stack Developer</p>Reuse the code profile section -->
 
-             <!-- Element to contain animated typing -->
+            <!-- Element to contain animated typing -->
             <span id="element">Full-Stack Developer</span>
 
             <!--Button Section-->
 
             <div class="btn-container">
-                <button class="btn btn-color-1" onclick="window.open('./assets/Sandeep-Yadav-Resume.pdf')">Download
+                <button class="btn btn-color-1" onclick="window.open('./assets/Sandeep Yadav Resume.pdf')">Download
                     Resume</button>
                 <button class="btn btn-color-2" onclick="location.href='./#contact'">Contact Info</button>
             </div>
@@ -95,17 +88,11 @@
             <!--Social Icon-->
 
             <div id="socials-container">
-                <img 
-                src="./assets/linkedin_light.png"
-                src-light="./assets/linkedin_light.png"
-                src-dark="./assets/linkedin_dark.png"
-                 alt="My linkedin Profile" class="icon linkedin-icon"
+                <img src="./assets/linkedin_light.png" src-light="./assets/linkedin_light.png"
+                    src-dark="./assets/linkedin_dark.png" alt="My linkedin Profile" class="icon linkedin-icon"
                     onclick="location.href='https://www.linkedin.com/in/sandeep-yadav-096015249/'">
-                <img 
-                src="./assets/github_light.png"
-                src-light="./assets/github_light.png"
-                src-dark="./assets/github_dark.png"
-                 alt="My github Profile" class="icon github-icon"
+                <img src="./assets/github_light.png" src-light="./assets/github_light.png"
+                    src-dark="./assets/github_dark.png" alt="My github Profile" class="icon github-icon"
                     onclick="location.href='https://github.com/Sandeep-Yadav-15'">
             </div>
         </div>
@@ -113,76 +100,85 @@
 
 
     <!--Next Section Will Be A About-->
-    <section id="about">
+    <section id="about" class="fade-in">
         <p class="section__text__p1">Get To Know More</p>
         <h1 class="title">About Me</h1>
         <div class="section-container">
             <div class="section_pic-container">
-                <img src="./assets/about-pic.jpg" alt="profile picture" class="about-pic"/>
+                <img src="./assets/about-pic.jpg" alt="profile picture" class="about-pic" />
             </div>
-           
+
             <!--Container Box_1-->
 
             <div class="about-details-container">
-                    <div class="about-containers">
-                        <div class="details-container">
-                            <img src="./assets/experience_light.png"
-                            src-light="./assets/experience_light.png"
-                            src-dark="./assets/experience_dark.png"
-                            alt="experience icon" class="icon"/>
-                            <h3>Experience</h3>
-                            <p>8 Month Trainee Software Engineer (Full Stack-MERN) </p>
-                        </div>
-
-                        <!--Container Box_2-->
-    
-                        <div class="details-container">
-                            <img src="./assets/education_light.png"
-                            src-light="./assets/education_light.png"
-                            src-dark="./assets/education_dark.png"
-                            alt="education icon" class="icon"/>
-                            <h3>Education</h3>
-                            <p>B.E Computer Engineering </p>
-                        </div>
-    
+                <div class="about-containers">
+                    <div class="details-container">
+                        <img src="./assets/experience_light.png" src-light="./assets/experience_light.png"
+                            src-dark="./assets/experience_dark.png" alt="experience icon" class="icon" />
+                        <h3>Experience</h3>
+                        <p>8 Month Trainee Software Engineer (Full Stack-MERN) </p>
                     </div>
-    
-                    <!--Paragraph Container-->
 
-                    <div class="text-container"> 
-                        <p>
-                            <strong>Introduction:</strong> <br>
-                            I’m Sandeep from Pune, and I recently completed my Bachelor's degree in Computer Science from Dhole Patil College of Engineering, Pune University, with a CGPA of 8.01. My academic journey, paired with my determination, has shaped my strong technical foundation. Prior to that, I completed my higher secondary education at SNBP Jr. College, with a focus on Science, achieving a percentage of 61.08%. <br><br>
-                    
-                            <strong>Strengths and Weaknesses:</strong> <br>
-                            I pride myself on being highly self-motivated and adaptable, thriving in various work environments. My ability to finish tasks ahead of deadlines is one of my strongest assets. However, I tend to find it difficult to leave any work unfinished, as it disrupts my flow and daily routine. I constantly push myself to complete work in a timely manner. <br><br>
-                    
-                            <strong>Career Goals:</strong> <br>
-                            In the near future, I aim to kick-start my career as a Backend developer. My long-term goal is to become an industry expert, contributing to innovative solutions and excelling in my field. <br><br>
-                    
-                            <strong>Internship Experience:</strong> <br>
-                            During my internship as a Internship Trainee – Full Stack Developer (MERN) at XOR Bit Infotech Pvt. Ltd. (21st Feb 2024 – 30th September 2024). My responsibilities included: <br>
-                            • Developed dynamic full-stack web applications using MongoDB, Express.js, React.js, and Node.js.<br>
-                            • Collaborated with cross-functional teams to create responsive and user-friendly interfaces. <br>
-                            • Integrated front-end UI with back-end services, enhancing functionality and performance.<br>
-                            • Debugged and optimized application performance through regular code reviews. <br> 
-                            • Managed databases for efficient data storage and retrieval. <br>
-                            • Utilized Git for version control and contributed to deployment pipelines using CI/CD practices. 
-                        </p> 
+                    <!--Container Box_2-->
+
+                    <div class="details-container">
+                        <img src="./assets/education_light.png" src-light="./assets/education_light.png"
+                            src-dark="./assets/education_dark.png" alt="education icon" class="icon" />
+                        <h3>Education</h3>
+                        <p>B.E Computer Engineering </p>
                     </div>
-                    
-    
+
                 </div>
+
+                <!--Paragraph Container-->
+
+                <div class="text-container">
+                    <p>
+                        <strong>Introduction:</strong> <br>
+                        I’m Sandeep from Pune, and I recently completed my Bachelor's degree in Computer Science from
+                        Dhole Patil College of Engineering, Pune University, with a CGPA of 8.01. My academic journey,
+                        paired with my determination, has shaped my strong technical foundation. Prior to that, I
+                        completed my higher secondary education at SNBP Jr. College, with a focus on Science, achieving
+                        a percentage of 61.08%. <br><br>
+
+                        <strong>Strengths and Weaknesses:</strong> <br>
+                        I pride myself on being highly self-motivated and adaptable, thriving in various work
+                        environments. My ability to finish tasks ahead of deadlines is one of my strongest assets.
+                        However, I tend to find it difficult to leave any work unfinished, as it disrupts my flow and
+                        daily routine. I constantly push myself to complete work in a timely manner. <br><br>
+
+                        <strong>Career Goals:</strong> <br>
+                        In the near future, I aim to kick-start my career as a Backend developer. My long-term goal is
+                        to become an industry expert, contributing to innovative solutions and excelling in my field.
+                        <br><br>
+
+                        <strong>Internship Experience:</strong> <br>
+                        During my internship as a Internship Trainee – Full Stack Developer (MERN) at XOR Bit Infotech
+                        Pvt. Ltd. (21st Feb 2024 – 30th September 2024). My responsibilities included: <br>
+                        • Developed dynamic full-stack web applications using MongoDB, Express.js, React.js, and
+                        Node.js.<br>
+                        • Collaborated with cross-functional teams to create responsive and user-friendly interfaces.
+                        <br>
+                        • Integrated front-end UI with back-end services, enhancing functionality and performance.<br>
+                        • Debugged and optimized application performance through regular code reviews. <br>
+                        • Managed databases for efficient data storage and retrieval. <br>
+                        • Utilized Git for version control and contributed to deployment pipelines using CI/CD
+                        practices.
+                    </p>
+                </div>
+
+
+            </div>
 
         </div>
 
-            <!--Arrow-->
+        <!--Arrow-->
         <!-- <img src="./assets/arrow.png" alt="arrow icon" class="icon arrow" onclick="location.href='./#experience'"/> -->
 
     </section>
 
     <!--Next will target Experience section-->
-    <section id="experience">
+    <section id="experience" class="fade-in">
         <p class="section__text__p1">Explore My</p> <!-- Reuse the code from about section-->
         <h1 class="title">Experience</h1> <!--Reuse the code from about section-->
         <div class="experience-details-container">
@@ -195,10 +191,8 @@
                     <div class="article-container">
                         <!--now we use article tag means article tag specifies independent self-content content-->
                         <article><!--Every article is goin to be bascially skillws that be have-->
-                            <img src="./assets/checkmark_light.png"
-                            src-light="./assets/checkmark_light.png"
-                            src-dark="./assets/checkmark_dark.png"
-                            alt="checkmark-icon" class="icon"/>
+                            <img src="./assets/checkmark_light.png" src-light="./assets/checkmark_light.png"
+                                src-dark="./assets/checkmark_dark.png" alt="checkmark-icon" class="icon" />
 
                             <div>
                                 <h3>HTML</h3>
@@ -208,45 +202,36 @@
                         </article>
 
                         <article>
-                            <img 
-                            src="./assets/checkmark_light.png"
-                            src-light="./assets/checkmark_light.png"
-                            src-dark="./assets/checkmark_dark.png"
-                            alt="checkmark-icon" class="icon"/>
+                            <img src="./assets/checkmark_light.png" src-light="./assets/checkmark_light.png"
+                                src-dark="./assets/checkmark_dark.png" alt="checkmark-icon" class="icon" />
 
                             <div>
                                 <h3>CSS</h3>
                                 <P>Experienced</P>
                             </div>
-                            
+
                         </article>
 
                         <article>
-                            <img 
-                            src="./assets/checkmark_light.png"
-                            src-light="./assets/checkmark_light.png"
-                            src-dark="./assets/checkmark_dark.png"
-                            alt="checkmark-icon" class="icon"/>
+                            <img src="./assets/checkmark_light.png" src-light="./assets/checkmark_light.png"
+                                src-dark="./assets/checkmark_dark.png" alt="checkmark-icon" class="icon" />
 
                             <div>
                                 <h3>JavaScript</h3>
                                 <p>Experience</p>
                             </div>
-                            
+
                         </article>
 
                         <article>
-                            <img
-                            src="./assets/checkmark_light.png"
-                            src-light="./assets/checkmark_light.png"
-                            src-dark="./assets/checkmark_dark.png"
-                            alt="checkmark-icon" class="icon"/>
+                            <img src="./assets/checkmark_light.png" src-light="./assets/checkmark_light.png"
+                                src-dark="./assets/checkmark_dark.png" alt="checkmark-icon" class="icon" />
 
                             <div>
                                 <h3>ReactJs</h3>
                                 <p>Intermediate</p>
                             </div>
-                            
+
                         </article>
 
                     </div>
@@ -254,32 +239,26 @@
                 </div>
 
                 <!--2nd Details container means 2nd box-->
-            <div class="details-container">
-                <h2 class="experience-sub-title">Backend Development</h2><!--Reuse the code from about section-->
+                <div class="details-container">
+                    <h2 class="experience-sub-title">Backend Development</h2><!--Reuse the code from about section-->
 
-                <div class="article-container">
-                    <!--now we use article tag means article tag specifies independent self-content content-->
-                    <article><!--Every article is goin to be bascially skills that be have-->
-                        <img
-                        src="./assets/checkmark_light.png"
-                        src-light="./assets/checkmark_light.png"
-                        src-dark="./assets/checkmark_dark.png"
-                        alt="checkmark-icon" class="icon"/>
+                    <div class="article-container">
+                        <!--now we use article tag means article tag specifies independent self-content content-->
+                        <article><!--Every article is goin to be bascially skills that be have-->
+                            <img src="./assets/checkmark_light.png" src-light="./assets/checkmark_light.png"
+                                src-dark="./assets/checkmark_dark.png" alt="checkmark-icon" class="icon" />
 
-                        <div>
-                            <h3>Node JS</h3>
-                            <P>Experience</P>
-                        </div>
-                    </article>
+                            <div>
+                                <h3>Node JS</h3>
+                                <P>Experience</P>
+                            </div>
+                        </article>
 
                         <article>
-                            <img
-                            src="./assets/checkmark_light.png"
-                            src-light="./assets/checkmark_light.png"
-                            src-dark="./assets/checkmark_dark.png"
-                            alt="checkmark-icon" class="icon"/>
-                            
-                            
+                            <img src="./assets/checkmark_light.png" src-light="./assets/checkmark_light.png"
+                                src-dark="./assets/checkmark_dark.png" alt="checkmark-icon" class="icon" />
+
+
                             <div>
                                 <h3>MongoDB</h3>
                                 <P>Intermediate</P>
@@ -287,21 +266,21 @@
 
                         </article>
 
-                    
-                </div>
 
-            </div>
+                    </div>
+
+                </div>
 
             </div>
 
         </div>
 
-         <!--Arrow-->
-         <!-- <img src="./assets/arrow.png" alt="arrow icon" class="icon arrow" onclick="location.href='./#projects'"/> -->
+        <!--Arrow-->
+        <!-- <img src="./assets/arrow.png" alt="arrow icon" class="icon arrow" onclick="location.href='./#projects'"/> -->
 
     </section>
 
-    <section id="projects">
+    <section id="projects" class="fade-in">
         <p class="section__text__p1">Browse My Recent</p>
         <h1 class="title">Projects</h1>
 
@@ -311,15 +290,17 @@
 
                 <div class="details-container color-container">
                     <div class="article-container">
-                        <img src="./assets/project-1.png" alt="Project-1" class="project-img"/>
+                        <img src="./assets/project-1.png" alt="Project-1" class="project-img" />
                     </div>
                     <h2 class="experience-sub-title project-title">FitZone GYM Website</h2>
                     <div class="btn-container">
-                        <button class="btn btn-color-1 project-btn" onclick="location.href='https://github.com/Sandeep-Yadav-15/FitZone GYM Website'">
+                        <button class="btn btn-color-1 project-btn"
+                            onclick="location.href='https://github.com/Sandeep-Yadav-15/FitZone GYM Website'">
                             Github
                         </button>
-        
-                        <button class="btn btn-color-1 project-btn" onclick="location.href='https://sandeep-yadav-15.github.io/FitZone-GYM-Website/'">
+
+                        <button class="btn btn-color-1 project-btn"
+                            onclick="location.href='https://sandeep-yadav-15.github.io/FitZone-GYM-Website/'">
                             Live Demo
                         </button>
                     </div>
@@ -327,145 +308,150 @@
 
                 <div class="details-container color-container">
                     <div class="article-container">
-                        <img src="./assets/project-4.png" alt="Project-4" class="project-img"/>
+                        <img src="./assets/project-4.png" alt="Project-4" class="project-img" />
                     </div>
                     <h2 class="experience-sub-title project-title">NodeJs-Website-Clone</h2>
                     <div class="btn-container">
-                        <button class="btn btn-color-1 project-btn" onclick="location.href='https://github.com/Sandeep-Yadav-15/Nodejs-Website-Clone'">
+                        <button class="btn btn-color-1 project-btn"
+                            onclick="location.href='https://github.com/Sandeep-Yadav-15/Nodejs-Website-Clone'">
                             Github
                         </button>
-        
-                        <button class="btn btn-color-1 project-btn" onclick="location.href='https://nodejs-website-clone.onrender.com'">
+
+                        <button class="btn btn-color-1 project-btn"
+                            onclick="location.href='https://nodejs-website-clone.onrender.com'">
                             Live Demo
                         </button>
                     </div>
                 </div>
 
-                <div class="details-container color-container"> 
+                <div class="details-container color-container">
                     <div class="article-container">
-                        <img src="./assets/project-2.png" alt="Project-2" class="project-img"/>
+                        <img src="./assets/project-2.png" alt="Project-2" class="project-img" />
                     </div>
                     <h2 class="experience-sub-title project-title">Quick Response Code Generator</h2>
                     <div class="btn-container">
-                        <button class="btn btn-color-1 project-btn" onclick="location.href='https://github.com/Sandeep-Yadav-15/QR-Code-Generator'">
+                        <button class="btn btn-color-1 project-btn"
+                            onclick="location.href='https://github.com/Sandeep-Yadav-15/QR-Code-Generator'">
                             Github
                         </button>
-        
-                        <button class="btn btn-color-1 project-btn" onclick="location.href='https://sandeep-yadav-15.github.io/QR-Code-Generator/'">
+
+                        <button class="btn btn-color-1 project-btn"
+                            onclick="location.href='https://sandeep-yadav-15.github.io/QR-Code-Generator/'">
                             Live Demo
                         </button>
                     </div>
                 </div>
 
-                <div class="details-container color-container"> 
+                <div class="details-container color-container">
                     <div class="article-container">
-                        <img src="./assets/project-3.png" alt="Project-3" class="project-img"/>
+                        <img src="./assets/project-3.png" alt="Project-3" class="project-img" />
                     </div>
                     <h2 class="experience-sub-title project-title"> Calculator 🧮 </h2>
                     <div class="btn-container">
-                        <button class="btn btn-color-1 project-btn" onclick="location.href='https://github.com/Sandeep-Yadav-15'">
+                        <button class="btn btn-color-1 project-btn"
+                            onclick="location.href='https://github.com/Sandeep-Yadav-15'">
                             Github
                         </button>
-        
-                        <button class="btn btn-color-1 project-btn" onclick="location.href='https://sandeep-yadav-15.github.io/Calculator/'">
+
+                        <button class="btn btn-color-1 project-btn"
+                            onclick="location.href='https://sandeep-yadav-15.github.io/Calculator/'">
                             Live Demo
                         </button>
                     </div>
                 </div>
 
-                <div class="details-container color-container"> 
+                <div class="details-container color-container">
                     <div class="article-container">
-                        <img src="./assets/project-5.png" alt="Project-3" class="project-img"/>
+                        <img src="./assets/project-5.png" alt="Project-3" class="project-img" />
                     </div>
                     <h2 class="experience-sub-title project-title"> React-JS-Digital-Clock-App </h2>
                     <div class="btn-container">
-                        <button class="btn btn-color-1 project-btn" onclick="location.href='https://github.com/Sandeep-Yadav-15/React-JS-Digital-Clock-App'">
+                        <button class="btn btn-color-1 project-btn"
+                            onclick="location.href='https://github.com/Sandeep-Yadav-15/React-JS-Digital-Clock-App'">
                             Github
                         </button>
-        
-                        <button class="btn btn-color-1 project-btn" onclick="location.href='https://sandeep-yadav-15.github.io/React-JS-Digital-Clock-App/'">
+
+                        <button class="btn btn-color-1 project-btn"
+                            onclick="location.href='https://sandeep-yadav-15.github.io/React-JS-Digital-Clock-App/'">
                             Live Demo
                         </button>
                     </div>
                 </div>
 
-                <div class="details-container color-container"> 
+                <div class="details-container color-container">
                     <div class="article-container">
-                        <img src="./assets/project-6.png" alt="Project-3" class="project-img"/>
+                        <img src="./assets/project-6.png" alt="Project-3" class="project-img" />
                     </div>
                     <h2 class="experience-sub-title project-title"> Dice-Challenge 🎲 </h2>
                     <div class="btn-container">
-                        <button class="btn btn-color-1 project-btn" onclick="location.href='https://github.com/Sandeep-Yadav-15/Dice-Challenge'">
+                        <button class="btn btn-color-1 project-btn"
+                            onclick="location.href='https://github.com/Sandeep-Yadav-15/Dice-Challenge'">
                             Github
                         </button>
-        
-                        <button class="btn btn-color-1 project-btn" onclick="location.href='https://sandeep-yadav-15.github.io/Dice-Challenge/'">
+
+                        <button class="btn btn-color-1 project-btn"
+                            onclick="location.href='https://sandeep-yadav-15.github.io/Dice-Challenge/'">
                             Live Demo
                         </button>
                     </div>
                 </div>
 
-                <div class="details-container color-container"> 
+                <div class="details-container color-container">
                     <div class="article-container">
-                        <img src="./assets/project-7.png" alt="Project-3" class="project-img"/>
+                        <img src="./assets/project-7.png" alt="Project-3" class="project-img" />
                     </div>
                     <h2 class="experience-sub-title project-title"> Furniture-Website 🪑 </h2>
                     <div class="btn-container">
-                        <button class="btn btn-color-1 project-btn" onclick="location.href='https://github.com/Sandeep-Yadav-15/Furniture-Website'">
+                        <button class="btn btn-color-1 project-btn"
+                            onclick="location.href='https://github.com/Sandeep-Yadav-15/Furniture-Website'">
                             Github
                         </button>
-        
-                        <button class="btn btn-color-1 project-btn" onclick="location.href='https://sandeep-yadav-15.github.io/Furniture-Website/'">
+
+                        <button class="btn btn-color-1 project-btn"
+                            onclick="location.href='https://sandeep-yadav-15.github.io/Furniture-Website/'">
                             Live Demo
                         </button>
                     </div>
                 </div>
 
-               
-                
-            </div> 
+
+
+            </div>
         </div>
     </section>
 
     <!-- Next Section Will Be A Contact Section -->
-    <section id="contact">
+    <section id="contact" class="fade-in">
         <p class="section__text__p1">Get In Touch</p>
         <h1 class="title">Contact Me</h1>
 
         <div class="contact-info-upper-container">
 
             <div class="contact-info-container">
-                <img src="./assets/call_light.png"
-                src-light="./assets/call_light.png"
-                src-dark="./assets/call_dark.png"
-                alt="call icon" class="icon contact-icon"/>
+                <img src="./assets/call_light.png" src-light="./assets/call_light.png" src-dark="./assets/call_dark.png"
+                    alt="call icon" class="icon contact-icon" />
                 <p><a href="tel:+918554885195">+91 8554885195</a></p>
             </div>
 
             <div class="contact-info-container">
-                <img src="./assets/email_light.png"
-                src-light="./assets/email_light.png"
-                src-dark="./assets/email_dark.png"
-                alt="Email Icon" class="icon contact-icon email-icon"/>
+                <img src="./assets/email_light.png" src-light="./assets/email_light.png"
+                    src-dark="./assets/email_dark.png" alt="Email Icon" class="icon contact-icon email-icon" />
                 <!-- To create a link that opens in the user's email program -->
                 <p><a href="mailto:sandeepyadav.15719@gmail.com">sandeepyadav.15719@gmail.com</a></p>
                 <!-- so we people click on this on a phone for eg any device that support it its goona open their local email app -->
             </div>
 
             <div class="contact-info-container">
-                <img 
-                src="./assets/linkedin_light.png"
-                src-light="./assets/linkedin_light.png"
-                src-dark="./assets/linkedin_dark.png"
-                 alt="My linkedin Profile" class="icon linkedin-icon"
+                <img src="./assets/linkedin_light.png" src-light="./assets/linkedin_light.png"
+                    src-dark="./assets/linkedin_dark.png" alt="My linkedin Profile" class="icon linkedin-icon"
                     onclick="location.href='https://www.linkedin.com/in/sandeep-yadav-096015249/'">
-               <p>
-                <a href="https://www.linkedin.com/in/sandeep-yadav-096015249/">sandeep-yadav-096015249</a>
-               </p>
+                <p>
+                    <a href="https://www.linkedin.com/in/sandeep-yadav-096015249/">sandeep-yadav-096015249</a>
+                </p>
 
             </div>
 
-            
+
 
         </div>
 
@@ -483,23 +469,23 @@
                     <li><a href="#experience">Experience</a></li>
                     <li><a href="#projects">Projects</a></li>
                     <li><a href="#contact">Contact</a></li>
-    
+
                 </ul>
 
             </div>
 
         </nav>
 
-        <p> Copyright &#169; <span id = 'current-date'></span> Sandeep Yadav.All Rights Reserved.</p>
+        <p> Copyright &#169; <span id='current-date'></span> Sandeep Yadav.All Rights Reserved.</p>
         <!-- span will be filled with the current year. -->
 
     </footer>
 
-     <!-- Load library from the CDN -->
-     <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
-     <script src="./script.js"></script>
+    <!-- Load library from the CDN -->
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script src="./script.js"></script>
 
-    
+
 
 
 </body>
