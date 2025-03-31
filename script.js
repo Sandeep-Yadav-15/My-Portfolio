@@ -148,6 +148,32 @@ function setLightMode() {
 }
 
 
+// I'll use IntersectionObserver to detect when sections enter the viewport and apply the fade-in effect.
+document.addEventListener("DOMContentLoaded", () => {
+  const fadeInElements = document.querySelectorAll(".fade-in");
+
+  const observer = new IntersectionObserver(
+      (entries, observer) => {
+          entries.forEach(entry => {
+              if (entry.isIntersecting) {
+                  entry.target.classList.add("visible");
+                  observer.unobserve(entry.target);
+              }
+          });
+      },
+      { threshold: 0.1 } // Trigger when 10% of the element is visible
+  /*The threshold property specifies the percentage of the target's visibility that should trigger the observer's callback.
+  - A threshold of 0.1 means the callback will be triggered when 10% of the target is visible in the viewport.
+  - You can adjust this value to control when the fade-in effect occurs.
+  - For example, a threshold of 0.5 would trigger the callback when 50% of the target is visible.
+  - You can also provide an array of values to create multiple thresholds.
+  - For example, [0, 0.5, 1] would trigger the callback at 0%, 50%, and 100% visibility.
+  */
+  );
+
+  fadeInElements.forEach(element => observer.observe(element));
+});
+
 
 
 
