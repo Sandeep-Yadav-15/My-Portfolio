@@ -48,6 +48,8 @@ h3{
 body {
     font-family: "Poppins", sans-serif;
     background-color: var(--background-color);
+    position: relative;
+
 }
 
 /*Add Html*/
@@ -77,16 +79,14 @@ nav, .nav-link{
  /*how to fix at one position of Our Navigation Desktop-nav*/ 
 
 
-nav {
-    justify-content: space-around;
-    /*There will be left and right space no matter how big or small the screen is.*/
-    align-items: center;
+ nav {
     width: 100%;
+    display: flex;
+    justify-content: space-around;/*There will be left and right space no matter how big or small the screen is.*/
+    align-items: center;
     height: 12vh;
-   
-  
-
-}
+    /* Remove position: fixed and all others */
+  }
 
 
 .nav-link {
@@ -218,7 +218,8 @@ a:hover::after{
 /* Mobile menu styling - hidden by default */
 .mobile-menu{
     position: absolute; /*Positioned relative to the navbar*/
-    top: 100%;
+    /* top: 100%; */
+    top: 12vh; /* Push it below the nav */
     right: 0;
     /*set background color transperent blur*/
     background-color: rgba(255, 255, 255, 0.5);
@@ -227,7 +228,10 @@ a:hover::after{
     width:fit-content;
     max-height: 0;/* Hidden by default */
     overflow: hidden;
-    transition: all 0.3s ease-in-out;
+    /* transition: all 0.3s ease-in-out; */
+
+    transition: max-height 0.3s ease-in-out;
+    z-index: 999; /* So it's clickable */
 } 
 
 /* Individual list item styling inside the mobile menu */
@@ -289,6 +293,9 @@ section {
     box-sizing: border-box;
     min-height: fit-content;
     /*bascially its ensuring that thing are not overlapping each other*/
+
+    scroll-margin-top: 12vh; /*offset for fixed nav*/
+    /* min-height: 100vh; */
 }
 
 .section-container{
@@ -700,7 +707,10 @@ footer p{
     opacity: 0;
     transform: translateY(30px);
     transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+    will-change: opacity, transform;
+    /* display: block; Prevent collapsing layout */
 }
+
 
 .fade-in.visible {
     opacity: 1;
