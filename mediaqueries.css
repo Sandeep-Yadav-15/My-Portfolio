@@ -66,6 +66,15 @@
 
 }
 
+/* @media screen and (max-width: 768px) {
+  .fade-in {
+    opacity: 1 !important;
+    transform: none !important;
+    transition: none !important;
+  }
+} */
+
+
 
 /* Add this to your mediaqueries.css or style.css file */
 
@@ -90,24 +99,24 @@
   #about{
     margin-top: -10rem;
   }
-
+  
   #about h1 {
-        margin-bottom: 3rem;
-    }
-    
-    #about .section__text__p1, 
-    #about .title {
-        padding-left: 0;
-        text-align: center;
-    }
-  .about-details-container .about-containers {
+    margin-bottom: 3rem;
+}
+
+#about .section__text__p1, 
+#about .title {
+    padding-left: 0;
+    text-align: center;
+}
+
+.about-details-container .about-containers {
   display: grid;
   grid-template-columns: repeat(2, 1fr); /* Two columns */
   grid-template-rows: 1fr; /* One row */
   gap: 1rem; /* Adjust gap between items */
 }
-
-
+  
 
 
   .section__pic-container img {
@@ -234,3 +243,9 @@
   text-align: justify;
 }
 }
+
+
+
+
+
+
