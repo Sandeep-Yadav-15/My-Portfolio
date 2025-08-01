@@ -1,7 +1,7 @@
 // Initialize the Typed.js instance with improved settings
 const typed = new Typed('#element', {
     // strings: Array(10).fill('Full-Stack Developer.'), // Fills the array with 20 instances of the same string
-    strings: ['Full-Stack Developer', 'MERN Stack Developer', 'Web Enthusiast', 'Web Applicarion'],
+    strings: ['Full-Stack Developer', 'MERN Stack Developer', 'Web Enthusiast', 'Web Application'],
     typeSpeed: 60, // Speed of typing
     backSpeed: 60, // Speed of deleting
     // backDelay: 1000, // Delay before starting to delete
